@@ -1,4 +1,8 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import quoteForm from './components/quoteForm';
+
+import logo from './logo.webp';
 import './App.css';
 
 function App() {
@@ -6,17 +10,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <p>Receive a free quote and schedule your procedure in minutes.</p>
+        <p>Just answer a few questions and we'll do the rest.</p>
+        <button
+          type='modal' 
+          className='btn'
+          onClick={quoteForm}
         >
-          Learn React
-        </a>
+          Proceed to questionaire
+        </button>
       </header>
     </div>
   );
